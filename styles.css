@@ -131,8 +131,8 @@ p { font-size: 0.95rem; line-height: 1.8; color: var(--smoke); }
 .addons-section { max-width: var(--max-width); margin: 0 auto; padding: 80px 40px; background: var(--obsidian); }
 .addons-section h2 { margin-bottom: 48px; color: var(--ivory); }
 .addons-grid { display: grid; grid-template-columns: repeat(2, 1fr); gap: 2px; }
-.addon-item { padding: 32px 40px; background: var(--ivory); display: flex; justify-content: space-between; align-items: center; }
-.addon-name { font-family: var(--font-logo); font-size: 0.78rem; letter-spacing: 0.12em; text-transform: uppercase; color: var(--obsidian); }
+.addon-item { padding: 32px 40px; background: var(--obsidian); display: flex; justify-content: space-between; align-items: center; }
+.addon-name { font-family: var(--font-logo); font-size: 0.78rem; letter-spacing: 0.12em; text-transform: uppercase; color: var(--ivory); }
 .addon-tag { font-family: var(--font-logo); font-size: 0.65rem; letter-spacing: 0.18em; text-transform: uppercase; color: var(--gold); border: 1px solid var(--gold); padding: 6px 14px; }
 .about-hero { background: var(--obsidian); padding: 180px 40px 100px; }
 .about-hero-inner { max-width: var(--max-width); margin: 0 auto; display: grid; grid-template-columns: 1fr 1fr; gap: 80px; align-items: end; }
