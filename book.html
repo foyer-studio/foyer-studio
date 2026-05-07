@@ -45,7 +45,7 @@
     <div class="form-inner">
       <p class="form-note">All fields marked with an asterisk are required. Pricing is provided directly after reviewing the property details &mdash; there are no fixed packages online because every listing is different.</p>
 
-      <form action="#" method="post" id="bookingForm">
+      <form action="https://formspree.io/f/mojrnvvn" method="POST" id="bookingForm">
         <div class="form-row">
           <div class="form-group">
             <label for="name">Full Name *</label>
@@ -160,10 +160,7 @@
     hamburger.addEventListener('click', () => mobileMenu.classList.add('open'));
     menuClose.addEventListener('click', () => mobileMenu.classList.remove('open'));
 
-    document.getElementById('bookingForm').addEventListener('submit', function(e) {
-      e.preventDefault();
-      this.innerHTML = '<div style="text-align:center; padding: 80px 0;"><span class="eyebrow" style="display:block; text-align:center;">Received</span><h2 style="margin-bottom:16px; font-style:italic;">Thank you.</h2><div class="gold-divider center"></div><p style="color: var(--mid-gray); margin-top: 24px;">Abhi will review your request and respond within the hour.</p></div>';
-    });
+    // Form now submits via Formspree — no JS override needed
   </script>
 </body>
 </html>
