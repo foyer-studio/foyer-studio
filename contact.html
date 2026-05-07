@@ -92,7 +92,7 @@
           <span class="eyebrow">Inquiry Form</span>
           <h2 style="margin-bottom: 32px;">Send a message</h2>
 
-          <form id="contactForm">
+          <form id="contactForm" action="https://formspree.io/f/xvzlbggl" method="POST">
             <div class="form-group">
               <label for="c-name">Name *</label>
               <input type="text" id="c-name" name="name" required placeholder="Your full name">
@@ -159,10 +159,7 @@
     hamburger.addEventListener('click', () => mobileMenu.classList.add('open'));
     menuClose.addEventListener('click', () => mobileMenu.classList.remove('open'));
 
-    document.getElementById('contactForm').addEventListener('submit', function(e) {
-      e.preventDefault();
-      this.innerHTML = '<div style="padding: 60px 0;"><span class="eyebrow" style="display:block;">Sent</span><h3 style="margin-bottom:12px; font-style:italic;">Message received.</h3><div class="gold-divider"></div><p style="color: var(--mid-gray); margin-top: 20px;">Abhi will be in touch shortly.</p></div>';
-    });
+    // Form now submits via Formspree — no JS override needed
   </script>
 </body>
 </html>
