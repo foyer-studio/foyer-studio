@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://foyer-studio.github.io/foyer-studio/sitemap.xml
