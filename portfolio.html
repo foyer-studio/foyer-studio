@@ -1,355 +1,342 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-<!-- Primary SEO -->
-<title>Portfolio — Real Estate Photography | Foyer Studio Waterloo</title>
-<meta name="description" content="Browse Foyer Studio's real estate photography portfolio. Residential listings across Kitchener, Waterloo, Cambridge, and Guelph — editorial interiors, drone aerials, and twilight photography.">
-<meta name="keywords" content="real estate photography portfolio Waterloo, listing photos Kitchener, property photography portfolio KW, Foyer Studio portfolio">
-<meta name="author" content="Abhi Bhullar — Foyer Studio">
-<meta name="robots" content="index, follow">
-<link rel="canonical" href="https://foyerstudio.ca/portfolio.html">
+    <!-- Primary SEO -->
+    <title>Portfolio — Real Estate Photography | Foyer Studio Waterloo</title>
+  <meta name="description" content="Browse Foyer Studio's real estate photography portfolio. Photography, aerial drone, video, and twilight categories — residential listings across Kitchener, Waterloo, Cambridge, and Guelph.">
+  <meta name="keywords" content="real estate photography portfolio Waterloo, listing photos Kitchener, property photography portfolio KW, aerial drone photography, twilight photography, Foyer Studio portfolio">
+  <meta name="author" content="Abhi Bhullar — Foyer Studio">
+  <meta name="robots" content="index, follow">
+  <link rel="canonical" href="https://foyerstudio.ca/portfolio.html">
+  
+  <!-- Open Graph -->
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://foyerstudio.ca/portfolio.html">
+  <meta property="og:title" content="Portfolio — Real Estate Photography | Foyer Studio">
+  <meta property="og:description" content="Real estate photography portfolio from Foyer Studio. Photography, aerial, video, and twilight categories across the KW Region.">
+  <meta property="og:image" content="https://foyerstudio.ca/living room .jpg">
+  <meta property="og:site_name" content="Foyer Studio">
+  <meta property="og:locale" content="en_CA">
+  
+  <!-- Twitter Card -->
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="Portfolio — Real Estate Photography | Foyer Studio">
+  <meta name="twitter:description" content="Real estate photography portfolio from Foyer Studio Waterloo.">
+  <meta name="twitter:image" content="https://foyerstudio.ca/living room .jpg">
+  
+  <link rel="stylesheet" href="styles.css">
+  
+  <!-- Google Analytics -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-XKBW69VHVK"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    gtag('config', 'G-XKBW69VHVK');
+  </script>
 
-<!-- Open Graph -->
-<meta property="og:type" content="website">
-<meta property="og:url" content="https://foyerstudio.ca/portfolio.html">
-<meta property="og:title" content="Portfolio — Real Estate Photography | Foyer Studio">
-<meta property="og:description" content="Real estate photography portfolio from Foyer Studio. Residential listings across the KW Region.">
-<meta property="og:image" content="https://foyerstudio.ca/living room .jpg">
-<meta property="og:site_name" content="Foyer Studio">
-<meta property="og:locale" content="en_CA">
+    <!-- Schema.org Local Business -->
+    <script type="application/ld+json">
+      {
+        "@context": "https://schema.org",
+        "@type": "LocalBusiness",
+        "name": "Foyer Studio",
+        "description": "Premium real estate photography and media studio serving Kitchener, Waterloo, Cambridge, and Guelph.",
+        "url": "https://foyerstudio.ca/portfolio.html",
+        "telephone": "+15195779090",
+        "email": "bhullarfoyerstudio@gmail.com",
+        "founder": {
+          "@type": "Person",
+          "name": "Abhi Bhullar"
+        },
+        "address": {
+          "@type": "PostalAddress",
+          "addressLocality": "Waterloo",
+          "addressRegion": "ON",
+          "addressCountry": "CA"
+        },
+        "areaServed": [
+          {"@type": "City", "name": "Kitchener"},
+          {"@type": "City", "name": "Waterloo"},
+          {"@type": "City", "name": "Cambridge"},
+          {"@type": "City", "name": "Guelph"}
+        ],
+        "sameAs": [
+          "https://www.instagram.com/foyer_studio09"
+        ],
+        "priceRange": "$$",
+        "openingHours": "Mo-Su 08:00-20:00"
+      }
+    </script>
 
-<!-- Twitter Card -->
-<meta name="twitter:card" content="summary_large_image">
-<meta name="twitter:title" content="Portfolio — Real Estate Photography | Foyer Studio">
-<meta name="twitter:description" content="Real estate photography portfolio from Foyer Studio Waterloo.">
-<meta name="twitter:image" content="https://foyerstudio.ca/living room .jpg">
+    <style>
+      /* ---- Portfolio Category Landing ---- */
+      .pf-cat-hero {
+          background: var(--obsidian);
+          padding: 180px 40px 96px;
+          text-align: center;
+          border-bottom: 1px solid rgba(201,169,97,0.18);
+      }
+      .pf-cat-hero-inner { max-width: 720px; margin: 0 auto; }
+      .pf-cat-title {
+          font-family: var(--font-display);
+          font-size: clamp(3rem, 6vw, 5rem);
+          font-weight: 400;
+          font-style: italic;
+          color: var(--ivory);
+          line-height: 1.1;
+          margin-bottom: 0;
+      }
+      .pf-cat-desc {
+          font-family: var(--font-logo);
+          font-size: 0.82rem;
+          letter-spacing: 0.15em;
+          color: rgba(245,241,232,0.55);
+          line-height: 1.8;
+          margin-top: 8px;
+      }
+      .pf-cat-section {
+          background: var(--obsidian);
+          padding: 72px 40px 96px;
+      }
+      .pf-cat-grid {
+          max-width: var(--max-width);
+          margin: 0 auto;
+          display: grid;
+          grid-template-columns: repeat(2, 1fr);
+          gap: 16px;
+      }
+      .pf-cat-tile {
+          position: relative;
+          aspect-ratio: 16/10;
+          overflow: hidden;
+          background: #111;
+          display: block;
+          text-decoration: none;
+      }
+      .pf-cat-tile img {
+          width: 100%;
+          height: 100%;
+          object-fit: cover;
+          transition: transform 0.65s ease;
+          display: block;
+      }
+      .pf-cat-tile:hover img { transform: scale(1.06); }
+      .pf-cat-tile-overlay {
+          position: absolute;
+          inset: 0;
+          background: linear-gradient(to top, rgba(10,10,10,0.78) 0%, rgba(10,10,10,0.18) 55%, rgba(10,10,10,0.05) 100%);
+          transition: background 0.4s ease;
+      }
+      .pf-cat-tile:hover .pf-cat-tile-overlay {
+          background: linear-gradient(to top, rgba(10,10,10,0.85) 0%, rgba(10,10,10,0.3) 55%, rgba(10,10,10,0.1) 100%);
+      }
+      .pf-cat-tile-label {
+          position: absolute;
+          bottom: 0;
+          left: 0;
+          right: 0;
+          padding: 28px 32px;
+          z-index: 2;
+          display: flex;
+          flex-direction: column;
+          gap: 6px;
+      }
+      .pf-cat-tile-name {
+          font-family: var(--font-display);
+          font-size: clamp(1.6rem, 2.8vw, 2.2rem);
+          font-weight: 400;
+          font-style: italic;
+          color: var(--ivory);
+          line-height: 1.1;
+          display: block;
+      }
+      .pf-cat-tile-arrow {
+          font-family: var(--font-logo);
+          font-size: 0.72rem;
+          letter-spacing: 0.22em;
+          text-transform: uppercase;
+          color: var(--gold);
+          opacity: 0;
+          transform: translateX(-8px);
+          transition: opacity 0.35s ease, transform 0.35s ease;
+          display: block;
+      }
+      .pf-cat-tile:hover .pf-cat-tile-arrow {
+          opacity: 1;
+          transform: translateX(0);
+      }
+      .pf-cat-tile-border {
+          position: absolute;
+          inset: 0;
+          border: 1px solid transparent;
+          transition: border-color 0.35s ease;
+          z-index: 3;
+          pointer-events: none;
+      }
+      .pf-cat-tile:hover .pf-cat-tile-border {
+          border-color: rgba(201,169,97,0.35);
+      }
+      @media (max-width: 768px) {
+          .pf-cat-grid { grid-template-columns: 1fr; gap: 12px; }
+          .pf-cat-section { padding: 48px 24px 72px; }
+          .pf-cat-hero { padding: 140px 24px 72px; }
+      }
+      </style>
+  </head>
+  <body>
 
-<link rel="stylesheet" href="styles.css">
+    <!-- Navigation -->
+    <nav class="site-nav scrolled" id="siteNav">
+        <div class="nav-inner">
+              <a href="index.html" class="nav-logo">Foyer Studio</a>a>
+              <ul class="nav-links">
+                      <li><a href="index.html">Home</a>a></li>
+                    <li><a href="portfolio.html" class="nav-active">Portfolio</a>a></li>
+                    <li><a href="services.html">Services</a>a></li>
+                    <li><a href="about.html">About</a>a></li>
+                    <li><a href="contact.html">Contact</a>a></li>
+                    <li><a href="book.html" class="nav-cta">Book a Shoot</a>a></li>
+              </ul>ul>
+            <button class="nav-toggle" aria-label="Open menu">&#9776;</button>button>
+        </div>div>
+    </nav>nav>
+  
+  <!-- Mobile Menu -->
+  <div class="mobile-menu" id="mobileMenu">
+    <button class="mobile-close">&#x00D7;</button>button>
+    <ul>
+          <li><a href="index.html">Home</a>a></li>li>
+          <li><a href="portfolio.html">Portfolio</a>a></li>li>
+          <li><a href="services.html">Services</a>a></li>li>
+          <li><a href="about.html">About</a>a></li>li>
+          <li><a href="book.html">Book a Shoot</a>a></li>li>
+          <li><a href="contact.html">Contact</a>a></li>li>
+    </ul>
+  </div>div>
 
-<!-- Google Analytics -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=G-XKBW69VHVK"></script>
-<script>
-window.dataLayer = window.dataLayer || [];
-function gtag(){dataLayer.push(arguments);}
-gtag('js', new Date());
-gtag('config', 'G-XKBW69VHVK');
-</script>
-<!-- Schema.org Local Business -->
-<script type="application/ld+json">
-{
-"@context": "https://schema.org",
-"@type": "LocalBusiness",
-"name": "Foyer Studio",
-"description": "Premium real estate photography and media studio serving Kitchener, Waterloo, Cambridge, and Guelph.",
-"url": "https://foyerstudio.ca/portfolio.html",
-"telephone": "+15195779090",
-"email": "bhullarfoyerstudio@gmail.com",
-"founder": {
-"@type": "Person",
-"name": "Abhi Bhullar"
-},
-"address": {
-"@type": "PostalAddress",
-"addressLocality": "Waterloo",
-"addressRegion": "ON",
-"addressCountry": "CA"
-},
-"areaServed": [
-{"@type": "City", "name": "Kitchener"},
-{"@type": "City", "name": "Waterloo"},
-{"@type": "City", "name": "Cambridge"},
-{"@type": "City", "name": "Guelph"}
-],
-"sameAs": [
-"https://www.instagram.com/foyer_studio09"
-],
-"priceRange": "$$",
-"openingHours": "Mo-Su 08:00-20:00"
-}
-</script>
-</head>
-<body>
+    <!-- Portfolio Hero -->
+    <section class="pf-cat-hero" aria-label="Portfolio header">
+        <div class="pf-cat-hero-inner">
+              <span class="section-label">Selected Work</span>span>
+              <h1 class="pf-cat-title">The Portfolio</h1>h1>
+              <div class="gold-divider" style="margin:24px auto;"></div>div>
+              <p class="pf-cat-desc">Residential real estate across Kitchener, Waterloo, Cambridge, and Guelph.<br>Every image, owner-shot.</p>p>
+        </div>div>
+    </section>section>
 
-<!-- Navigation -->
-<nav class="site-nav scrolled" id="siteNav">
-<div class="nav-inner">
-<a href="index.html" class="nav-logo">Foyer Studio</a>
-<ul class="nav-links">
-<li><a href="index.html">Home</a></li>
-<li><a href="portfolio.html" class="nav-active">Portfolio</a></li>
-<li><a href="services.html">Services</a></li>
-<li><a href="about.html">About</a></li>
-<li><a href="contact.html">Contact</a></li>
-<li><a href="book.html" class="nav-cta">Book a Shoot</a></li>
-</ul>
-<button class="nav-toggle" aria-label="Open menu">&#9776;</button>
-</div>
-</nav>
+    <!-- Category Grid -->
+    <section class="pf-cat-section" aria-label="Portfolio categories">
+        <div class="pf-cat-grid">
 
-<!-- Mobile Menu -->
-<div class="mobile-menu" id="mobileMenu">
-<button class="mobile-close">&#x00D7;</button>
-<ul>
-<li><a href="index.html">Home</a></li>
-<li><a href="portfolio.html">Portfolio</a></li>
-<li><a href="services.html">Services</a></li>
-<li><a href="about.html">About</a></li>
-<li><a href="book.html">Book a Shoot</a></li>
-<li><a href="contact.html">Contact</a></li>
-</ul>
-</div>
+              <!-- Photography -->
+              <a href="portfolio-photography.html" class="pf-cat-tile" aria-label="Photography portfolio">
+                      <img src="photo-open-plan-grey.jpg" alt="Bright open-plan living space — Photography" loading="lazy">
+                      <div class="pf-cat-tile-overlay"></div>div>
+                      <div class="pf-cat-tile-label">
+                                <span class="pf-cat-tile-name">Photography</span>span>
+                                <span class="pf-cat-tile-arrow">View Gallery &rarr;</span>span>
+                      </div>div>
+                      <div class="pf-cat-tile-border"></div>div>
+              </a>a>
 
-<!-- Portfolio Hero -->
-<section class="pf-hero" aria-label="Portfolio header">
-<div class="pf-hero-inner">
-<span class="section-label">Selected Work</span>
-<h1 class="pf-hero-title">The Portfolio</h1>
-<div class="gold-divider" style="margin:24px auto;"></div>
-<p class="pf-hero-desc">Residential real estate across Kitchener, Waterloo, Cambridge, and Guelph.<br>Every image, owner-shot.</p>
-</div>
-</section>
+              <!-- Video -->
+              <a href="portfolio-video.html" class="pf-cat-tile" aria-label="Video portfolio">
+                      <img src="Front 2.jpg" alt="Exterior front of property — Video" loading="lazy">
+                      <div class="pf-cat-tile-overlay"></div>div>
+                      <div class="pf-cat-tile-label">
+                                <span class="pf-cat-tile-name">Video</span>span>
+                                <span class="pf-cat-tile-arrow">View Gallery &rarr;</span>span>
+                      </div>div>
+                      <div class="pf-cat-tile-border"></div>div>
+              </a>a>
 
-<!-- Portfolio Gallery -->
-<section class="pf-gallery-section section-dark" aria-label="Portfolio gallery">
-<div class="section-inner">
+              <!-- Aerial -->
+              <a href="portfolio-aerial.html" class="pf-cat-tile" aria-label="Aerial portfolio">
+                      <img src="drone 2.jpg" alt="Aerial drone view of residential property — Aerial" loading="lazy">
+                      <div class="pf-cat-tile-overlay"></div>div>
+                      <div class="pf-cat-tile-label">
+                                <span class="pf-cat-tile-name">Aerial</span>span>
+                                <span class="pf-cat-tile-arrow">View Gallery &rarr;</span>span>
+                      </div>div>
+                      <div class="pf-cat-tile-border"></div>div>
+              </a>a>
 
-<!-- Filter Tabs -->
-<div class="pf-filters" role="tablist" aria-label="Filter portfolio by category">
-<button class="pf-filter-btn active" data-filter="all" role="tab" aria-selected="true">All</button>
-<button class="pf-filter-btn" data-filter="photography" role="tab" aria-selected="false">Photography</button>
-<button class="pf-filter-btn" data-filter="video" role="tab" aria-selected="false">Video</button>
-<button class="pf-filter-btn" data-filter="aerial" role="tab" aria-selected="false">Aerial</button>
-<button class="pf-filter-btn" data-filter="twilight" role="tab" aria-selected="false">Twilight</button>
-</div>
+              <!-- Twilight -->
+              <a href="portfolio-twilight.html" class="pf-cat-tile" aria-label="Twilight portfolio">
+                      <img src="Front.jpg" alt="Residential exterior photographed at twilight — Twilight" loading="lazy">
+                      <div class="pf-cat-tile-overlay"></div>div>
+                      <div class="pf-cat-tile-label">
+                                <span class="pf-cat-tile-name">Twilight</span>span>
+                                <span class="pf-cat-tile-arrow">View Gallery &rarr;</span>span>
+                      </div>div>
+                      <div class="pf-cat-tile-border"></div>div>
+              </a>a>
 
-<!-- Gallery Grid -->
-<div class="pf-grid" id="pfGrid">
+        </div>div>
+    </section>section>
 
-<div class="pf-item" data-category="photography">
-<img src="living room .jpg" alt="Bright living room with large windows and natural light" loading="lazy">
-<div class="pf-item-overlay"><span>Photography</span></div>
-</div>
-
-<div class="pf-item" data-category="photography">
-<img src="kitchen.jpg" alt="Modern kitchen with clean lines and quartz countertops" loading="lazy">
-<div class="pf-item-overlay"><span>Photography</span></div>
-</div>
-
-<div class="pf-item" data-category="aerial">
-<img src="front drone.jpg" alt="Aerial view of residential property from above" loading="lazy">
-<div class="pf-item-overlay"><span>Aerial</span></div>
-</div>
-
-<div class="pf-item" data-category="photography">
-<img src="Dining room .jpg" alt="Dining room with warm ambient lighting" loading="lazy">
-<div class="pf-item-overlay"><span>Photography</span></div>
-</div>
-
-<div class="pf-item" data-category="twilight">
-<img src="Front.jpg" alt="Residential exterior at dusk — twilight photography" loading="lazy">
-<div class="pf-item-overlay"><span>Twilight</span></div>
-</div>
-
-<div class="pf-item" data-category="photography">
-<img src="master bedroom .jpg" alt="Primary bedroom with clean styling and natural light" loading="lazy">
-<div class="pf-item-overlay"><span>Photography</span></div>
-</div>
-
-<div class="pf-item" data-category="photography">
-<img src="kitchen 2 .jpg" alt="Kitchen with stainless appliances and warm tones" loading="lazy">
-<div class="pf-item-overlay"><span>Photography</span></div>
-</div>
-
-<div class="pf-item" data-category="aerial">
-<img src="drone .jpg" alt="Drone aerial view of neighbourhood" loading="lazy">
-<div class="pf-item-overlay"><span>Aerial</span></div>
-</div>
-
-<div class="pf-item" data-category="photography">
-<img src="living room 2 .jpg" alt="Living area with styled furniture and natural light" loading="lazy">
-<div class="pf-item-overlay"><span>Photography</span></div>
-</div>
-
-<div class="pf-item" data-category="photography">
-<img src="Entry Hallway .jpg" alt="Entry hallway with warm lighting" loading="lazy">
-<div class="pf-item-overlay"><span>Photography</span></div>
-</div>
-
-<div class="pf-item" data-category="photography">
-<img src="master bedroom 2 .jpg" alt="Secondary bedroom with natural light" loading="lazy">
-<div class="pf-item-overlay"><span>Photography</span></div>
-</div>
-
-<div class="pf-item" data-category="photography">
-<img src="living room 3 .jpg" alt="Open-plan living space with city views" loading="lazy">
-<div class="pf-item-overlay"><span>Photography</span></div>
-</div>
-
-</div>
-
-<!-- Coming Soon placeholder -->
-<div class="pf-empty" id="pfEmpty" hidden>
-<span class="section-label">Coming Soon</span>
-<p>Work in this category is on the way.</p>
-</div>
-
-</div>
-</section>
-
-<!-- Lightbox -->
-<div class="pf-lightbox" id="pfLightbox" role="dialog" aria-modal="true" aria-label="Image lightbox" hidden>
-<div class="pf-lightbox-backdrop" id="pfLightboxBackdrop"></div>
-<button class="pf-lightbox-close" id="pfLightboxClose" aria-label="Close lightbox">&#x00D7;</button>
-<button class="pf-lightbox-prev" id="pfLightboxPrev" aria-label="Previous image">&#8249;</button>
-<button class="pf-lightbox-next" id="pfLightboxNext" aria-label="Next image">&#8250;</button>
-<div class="pf-lightbox-img-wrap">
-<img src="" alt="" id="pfLightboxImg">
-<span class="pf-lightbox-caption" id="pfLightboxCaption"></span>
-</div>
-</div>
-
-<!-- CTA Section -->
-<section class="cta-section section-dark" aria-label="Book a shoot">
-<div class="section-inner cta-inner">
-<span class="section-label">Book</span>
-<h2>Your listing is next.</h2>
-<p>Next-day delivery. No rush fees. Same photographer every time.</p>
-<a href="book.html" class="btn-gold">Book a Shoot</a>
-</div>
-</section>
-
-<!-- Footer -->
-<footer class="site-footer">
-<div class="footer-inner">
-<div class="footer-brand">
-<span class="footer-name">Foyer Studio</span>
-<p class="footer-desc">Premium real estate photography and media for agents who understand that the first showing happens online.</p>
-<p class="footer-region">Kitchener &middot; Waterloo &middot; Cambridge &middot; Guelph</p>
-</div>
-<nav class="footer-nav" aria-label="Footer navigation">
-<h5>Pages</h5>
-<ul>
-<li><a href="index.html">Home</a></li>
-<li><a href="portfolio.html">Portfolio</a></li>
-<li><a href="services.html">Services</a></li>
-<li><a href="about.html">About</a></li>
-<li><a href="book.html">Book a Shoot</a></li>
-<li><a href="contact.html">Contact</a></li>
-</ul>
-</nav>
-<div class="footer-contact">
-<h5>Contact</h5>
-<ul>
-<li><a href="mailto:bhullarfoyerstudio@gmail.com">bhullarfoyerstudio@gmail.com</a></li>
-<li><a href="tel:+15195779090">+1 (519) 577-9090</a></li>
-<li><a href="https://www.instagram.com/foyer_studio09" target="_blank" rel="noopener">@foyer_studio09</a></li>
-<li><a href="contact.html" class="footer-inquiry">Send an Inquiry</a></li>
-</ul>
-</div>
-</div>
-<div class="footer-bottom">
-<span class="footer-copy">&copy; 2026 Foyer Studio. Waterloo, Ontario. All rights reserved.</span>
-<a href="https://www.instagram.com/foyer_studio09" target="_blank" rel="noopener" class="footer-ig">Instagram &rarr;</a>
-</div>
-</footer>
-
-<script>
-// Mobile menu
-const toggle = document.querySelector('.nav-toggle');
-const menu   = document.getElementById('mobileMenu');
-const mclose = document.querySelector('.mobile-close');
-if (toggle) toggle.addEventListener('click', () => menu.classList.add('open'));
-if (mclose) mclose.addEventListener('click', () => menu.classList.remove('open'));
-
-// Nav scroll
-window.addEventListener('scroll', () => {
-  document.getElementById('siteNav').classList.toggle('scrolled', window.scrollY > 60);
-});
-
-// Portfolio filter
-(function () {
-  const filterBtns = document.querySelectorAll('.pf-filter-btn');
-  const items      = document.querySelectorAll('.pf-item');
-  const emptyMsg   = document.getElementById('pfEmpty');
-
-  function applyFilter(filter) {
-    let visible = 0;
-    items.forEach(item => {
-      const show = filter === 'all' || item.dataset.category === filter;
-      item.style.display = show ? '' : 'none';
-      if (show) visible++;
-    });
-    emptyMsg.hidden = visible > 0;
-  }
-
-  filterBtns.forEach(btn => {
-    btn.addEventListener('click', () => {
-      filterBtns.forEach(b => { b.classList.remove('active'); b.setAttribute('aria-selected','false'); });
-      btn.classList.add('active');
-      btn.setAttribute('aria-selected','true');
-      applyFilter(btn.dataset.filter);
-    });
-  });
-  applyFilter('all');
-})();
-
-// Lightbox
-(function () {
-  const lightbox  = document.getElementById('pfLightbox');
-  const backdrop  = document.getElementById('pfLightboxBackdrop');
-  const closeBtn  = document.getElementById('pfLightboxClose');
-  const prevBtn   = document.getElementById('pfLightboxPrev');
-  const nextBtn   = document.getElementById('pfLightboxNext');
-  const lbImg     = document.getElementById('pfLightboxImg');
-  const lbCaption = document.getElementById('pfLightboxCaption');
-  const allItems  = document.querySelectorAll('.pf-item');
-  let idx = 0;
-
-  function getVisible() {
-    return Array.from(allItems).filter(el => el.style.display !== 'none');
-  }
-  function openAt(i) {
-    const vis = getVisible();
-    if (!vis.length) return;
-    idx = ((i % vis.length) + vis.length) % vis.length;
-    const item = vis[idx];
-    const img  = item.querySelector('img');
-    lbImg.src  = img.src;
-    lbImg.alt  = img.alt;
-    lbCaption.textContent = item.querySelector('.pf-item-overlay span').textContent;
-    lightbox.hidden = false;
-    document.body.style.overflow = 'hidden';
-    prevBtn.style.display = vis.length > 1 ? '' : 'none';
-    nextBtn.style.display = vis.length > 1 ? '' : 'none';
-  }
-  function closeLb() {
-    lightbox.hidden = true;
-    lbImg.src = '';
-    document.body.style.overflow = '';
-  }
-
-  allItems.forEach(item => {
-    item.addEventListener('click', () => {
-      const vis  = getVisible();
-      const vi   = vis.indexOf(item);
-      openAt(vi);
-    });
-  });
-  closeBtn.addEventListener('click', closeLb);
-  backdrop.addEventListener('click', closeLb);
-  prevBtn.addEventListener('click', () => openAt(idx - 1));
-  nextBtn.addEventListener('click', () => openAt(idx + 1));
-  document.addEventListener('keydown', e => {
-    if (lightbox.hidden) return;
-    if (e.key === 'Escape')     closeLb();
-    if (e.key === 'ArrowLeft')  openAt(idx - 1);
-    if (e.key === 'ArrowRight') openAt(idx + 1);
-  });
-})();
-</script>
-
-</body>
-</html>
+    <!-- Footer -->
+    <footer class="site-footer">
+        <div class="footer-inner">
+              <div class="footer-brand">
+                      <p class="footer-name">Foyer Studio</p>p>
+                      <p class="footer-desc">Premium real estate photography and media for agents who understand that the first showing happens online.</p>p>
+                      <p class="footer-region">Kitchener &middot; Waterloo &middot; Cambridge &middot; Guelph</p>p>
+              </div>div>
+              <div class="footer-nav">
+                      <h5>Pages</h5>
+                    <ul>
+                            <li><a href="index.html">Home</a>a></li>
+                            <li><a href="portfolio.html">Portfolio</a>a></li>
+                            <li><a href="services.html">Services</a>a></li>
+                            <li><a href="about.html">About</a>a></li>
+                            <li><a href="book.html">Book a Shoot</a>a></li>
+                            <li><a href="contact.html">Contact</a>a></li>
+                    </ul>
+              </div>div>
+            <div class="footer-contact">
+                  <h5>Contact</h5>
+                  <ul>
+                          <li><a href="mailto:bhullarfoyerstudio@gmail.com">bhullarfoyerstudio@gmail.com</a>a></li>
+                          <li><a href="tel:+15195779090">+1 (519) 577-9090</a>a></li>
+                          <li><a href="https://instagram.com/foyer_studio09">@foyer_studio09</a>a></li>
+                  </ul>
+            </div>div>
+        </div>div>
+      <div class="footer-bottom">
+          <p class="footer-copy">&copy; 2026 Foyer Studio. Waterloo, Ontario. All rights reserved.</p>p>
+          <a href="https://instagram.com/foyer_studio09" class="footer-ig">Instagram &rarr;</a>a>
+      </div>div>
+    </footer>footer>
+  
+  <script>
+  // Sticky nav scroll behaviour
+  (function(){
+      var nav = document.getElementById('siteNav');
+      if(!nav) return;
+      window.addEventListener('scroll', function(){
+            nav.classList.toggle('scrolled', window.scrollY > 20);
+      }, {passive:true});
+      nav.classList.add('scrolled');
+  })();
+  
+  // Mobile menu
+  (function(){
+      var btn = document.querySelector('.nav-toggle');
+      var close = document.querySelector('.mobile-close');
+      var menu = document.getElementById('mobileMenu');
+      if(btn && menu) btn.addEventListener('click', function(){ menu.classList.add('open'); });
+      if(close && menu) close.addEventListener('click', function(){ menu.classList.remove('open'); });
+  })();
+  </script>
+  </body>
+</html>html></li></li></h5>
+    </ul></li></li>
+  </body>
+    </style>
+  </script></title>
+  </head>
